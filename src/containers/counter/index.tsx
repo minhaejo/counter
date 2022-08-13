@@ -22,7 +22,7 @@ const CounterContainer: FC = () => {
   };
 
   return (
-    <Counㅁter
+    <Counter
       count={count}
       onIncrease={onIncrease}
       onDecrease={onDecrease}
