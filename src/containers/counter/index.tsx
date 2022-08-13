@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { decrease, increase, increaseBy } from "../../redux/slices/counter";
 import { RootState } from "../../redux/store";
-import Counter from "./pageComponents";
+import Counter from "./pageComponents/Counter";
 const CounterContainer: FC = () => {
   // 상태를 조회합니다. 상태를 조회 할 때에는 state 의 타입을 RootState 로 지정해야합니다.
   const count = useSelector((state: RootState) => state.counter.count);
