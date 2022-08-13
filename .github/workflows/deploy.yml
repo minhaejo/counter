@@ -13,7 +13,8 @@ jobs:
 
       - name: Use Node.js version 16.x
         uses: actions/setup-node@v1
-        with: node-version:16.x
+        with:
+          node-version: 16.x
 
       - name: Build
         run: |
