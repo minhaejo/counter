@@ -11,7 +11,11 @@ const index: NextPage<Props> = ({ res }) => {
 // This function gets called at build time
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const res = "ㅁㅁ";
+  const res = await new Promise((res) => {
+    setTimeout(() => {
+      res("aa");
+    }, 2000);
+  });
   // const posts = await res.json();
 
   // By returning { props: { posts } }, the Blog component

@@ -8,11 +8,13 @@ const index: NextPage<Props> = () => {
 };
 
 // This gets called on every request
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // Fetch data from external API
-  const res = await setTimeout(() => {
-    return "aa";
-  }, 2000);
+  const res = await new Promise((res) => {
+    setTimeout(() => {
+      res("aa");
+    }, 2000);
+  });
   // const posts = await res.json();
   const posts = res;
   // Pass data to the page via props
