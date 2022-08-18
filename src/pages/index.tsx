@@ -3,7 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 
 const Home: NextPage = () => {
-  return <div className=" text-lg text-purple-500 text-[40px]">테스트</div>;
+  return (
+    <div className=" text-lg text-purple-500 text-[40px]">테스트 건호짱</div>
+  );
 };
 
 export default Home;
