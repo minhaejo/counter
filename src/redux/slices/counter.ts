@@ -1,3 +1,4 @@
+// import { increase } from "./counter";
 const INCREASE = "counter/INCREASE" as const;
 const DECREASE = "counter/DECREASE" as const;
 const INCREASE_BY = "counter/INCREASE_BY" as const;
@@ -30,7 +31,12 @@ type CounterAction =
   | ReturnType<typeof increaseBy>;
 
 // 이 리덕스 모듈에서 관리 할 상태의 타입을 선언합니다
-type CounterState = {
+export type CounterState = {
+  count: number;
+  //   question: { text?: string } = {};
+  counter?: object;
+};
+export type CounterNum = {
   count: number;
 };
 

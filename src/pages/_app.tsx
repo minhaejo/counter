@@ -4,6 +4,8 @@ import "../../styles/globals.css";
 import PropTypes from "prop-types";
 import wrapper from "../redux/store/configureStore";
 
+import { Provider } from "react-redux";
+
 const App = ({ Component: Page }: AppProps) => {
   return <Page />;
 };
